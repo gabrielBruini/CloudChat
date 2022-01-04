@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;   
+    margin: 20px;
+    background: url('../images/clouds.png');
+    background-position: center;    
+    background-size: contain;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 0;
+    font-size: 17px;
+    background: white;
+    margin-left: 5px;
+}
+
+/* Pagina Chat */
+
+.chat-container {
+    max-width: 1200px;
+    background: url('../images/clouds.png'); 
+    background-size: 350px;
+    background-repeat: repeat-x;
+    margin: 35px auto;
+    overflow: hidden;
+    
+}
+
+.chat-header {
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 20px;	
+    color: white;  
+	border: 2px solid white;
+    text-align: center;
+
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background: white;
+    border: 10px solid #538BA3 ;
+    height: 500px;	
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+    font-weight: 700;
+}
+
+#chat-messages {
+	padding: 30px;
+	max-height: 700px;
+	overflow-y: scroll;
+}
+
+#chat-messages .message {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	border-radius: 5px;
+	
+}
+
+#chat-messages .messageBot {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #538BA3;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: #538BA3;
+    border: 2px solid white;
+    
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}

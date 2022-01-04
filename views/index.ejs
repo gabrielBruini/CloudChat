@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+        background-image: url('../images/clouds.png');        
+       
+        background-position: center;   
+        background-size: cover;
+        margin: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="row" style="margin: 0px;">
+        <div class="col-4 mx-auto mt-5">
+            
+            <div class="card mt-5">
+                <div class=" formcard">
+                    <h4 class="text-uppercase text-center mb-2 mt-2">Login</h4>                        
+                </div>
+        
+                <div class="card-body">
+                        <form action="/chat" method="post">
+                            <%= nameError %> 
+                        <input class="form-control" name="name" id="name" type="name" maxlength="18" placeholder="Nome" required><br>
+                    
+                        <button type="submit" class="btn btn-dark btn-block text-uppercase" >Login</button>
+                    </form>
+                        
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+</body>
+
+
+</html>
